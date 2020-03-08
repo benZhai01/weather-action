@@ -31,7 +31,7 @@ jobs:
     - name: Send Mail
       uses: dawidd6/action-send-mail@master
       with: 
-        server_address: smtp.163.com
+        server_address: smtp.qq.com
         server_port: 465
         username: ${{ secrets.mail_username }}
         password: ${{ secrets.mail_pwd }}
