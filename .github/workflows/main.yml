@@ -31,8 +31,10 @@ jobs:
     - name: Send Mmail
       uses: dawidd6/action-send-mail@v1.3.0
       with: 
-        server_address: smtp.aliyun.com
-        server_port: 465
+        server_address: smtp.qq.com
+        server_port: 25
+        username: ${{ secrets.MAIL_USERNAME }}
+        password: ${{ secrets.MAIL_PASSWORD }}
         subject: Xian Weather Report (${{env.REPORT_DATE}})
         body: file://result.html
         to: chery.zhai@outlook.com
